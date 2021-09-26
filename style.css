@@ -1,0 +1,254 @@
+body , h1, h2, h3, h4, h5, h6, p, span{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* header */
+.mein-header .navbar-brand{
+    font-size: 27px;
+    font-weight: bold;
+}
+.mein-header span{
+    background-color: #6278DF;
+    display: inline-block;
+    color: white;
+    width: 43px;
+    height: 44px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 31px;
+    position: relative;
+    top: 2px;
+}
+
+/* slider-section */
+.slider-section{
+    background: url(./imge/banner.jpg) no-repeat center center;
+    padding: 170px 0;
+
+    position: relative;
+    z-index: 1;
+}
+
+.slider-section::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: -1;
+}
+
+
+.slider-caption h4{
+    font-weight: bold;
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+.slider-caption h2{
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 45px;
+}
+.slider-caption .form-control{
+    padding: 15px 24px;
+}
+.slider-caption .btn{
+    padding: 15px 37px;
+    font-weight: bold;
+}
+
+/* number-counter */
+.number-counter h1{
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* about-section */
+.about-section{
+    background-color: #F7F9FF;
+}
+.about-section h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.about-section p{
+    font-size: 20px;
+    line-height: 41px;
+    margin-top: 25px;
+}
+
+/* larning-section */
+.larning-section{
+    background-color: #FFFFFF;
+}
+.larning-section h1{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* feature-section */
+.feature-item{
+    height: 350px;
+    box-shadow: 4px 5px 30px 0 lightgrey;
+}
+.left-img-sec{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+
+}
+.right-text-sec{
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+.left-img-sec img{
+    height: 100%;
+    width: auto;
+    max-width: inherit;
+    position: relative;
+    left: -139px;
+}
+.there-img {
+    padding-left: 105px;
+}
+
+/* protfolio-section */
+
+.protfolio-item{}
+.protfolio-item a{
+    position: relative;
+    display: block;
+}
+.protfolio-item a::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(98, 120, 223, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.protfolio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* praicing-tabble */
+
+.praicing-tabble{
+    background-color: #F7F9FF;
+    padding: 50px 90px;
+}
+
+.tabble-item{
+    background-color: #fff;
+    padding: 50px 30px;
+    box-shadow: 4px 4px 30px lightgray;
+    border-radius: 6px;
+}
+.tabble-item h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.tabble-item p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.tabble-item ul{
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+.tabble-item ul li {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.tabble-item ul li span {
+    color: #6278DF;
+    font-size: 30px;
+    font-weight: bold;
+    width: 40px;
+    display: inline-block;
+}
+
+/* testimonam-section */
+
+.testimonam-section span{
+    font-size: 82px;
+    color: lightgray;
+    display: block;
+    text-align: center;
+}
+.testimonam-section p{
+    padding: 1% 20%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.users-img img {
+    width: 75px;
+    border-radius: 50%;
+}
+.text-users h4 {
+    font-size: 20px;
+}
+.text-users h5{
+    margin-top: -6px;
+}
+
+.History-section{
+    background-color: #F7F9FF;
+}
+
+/* about-item */
+.about-item{}
+.about-item .card{
+    border: none;
+    padding: 10px 0px;
+}
+.about-item img {
+    width: 82px;
+    margin-top: -64px;
+    margin-left: 17px;
+}
+
+/* app-img  */
+
+.app-img {
+    display: block;
+    position: relative;
+}
+.app-img::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(98, 120, 223, 0.6);
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .5s;
+}
+.app-img:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+footer{
+    background-color: #F7F9FF;
+}
